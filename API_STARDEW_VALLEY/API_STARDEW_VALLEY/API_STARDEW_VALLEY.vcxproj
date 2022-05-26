@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{66B2AFA3-08DD-42AB-A10D-45B4D24D8F08}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>API_STARDEW_VALLEY</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="API_STARDEW_VALLEY.h" />
+    <ClInclude Include="Arrow.h" />
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="Birds.h" />
+    <ClInclude Include="BmpMgr.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Cat.h" />
+    <ClInclude Include="Cave.h" />
+    <ClInclude Include="Cave2.h" />
+    <ClInclude Include="Cave3.h" />
+    <ClInclude Include="CollisionMgr.h" />
+    <ClInclude Include="CropFactory.h" />
+    <ClInclude Include="Crops.h" />
+    <ClInclude Include="Crop_Flower.h" />
+    <ClInclude Include="Crop_Pepper.h" />
+    <ClInclude Include="Ending.h" />
+    <ClInclude Include="Farm.h" />
+    <ClInclude Include="fmod.h" />
+    <ClInclude Include="fmod.hpp" />
+    <ClInclude Include="fmod_codec.h" />
+    <ClInclude Include="fmod_dsp.h" />
+    <ClInclude Include="fmod_errors.h" />
+    <ClInclude Include="fmod_memoryinfo.h" />
+    <ClInclude Include="fmod_output.h" />
+    <ClInclude Include="Gamble.h" />
+    <ClInclude Include="Grass.h" />
+    <ClInclude Include="HP.h" />
+    <ClInclude Include="Imoji.h" />
+    <ClInclude Include="Items.h" />
+    <ClInclude Include="ItemsMgr.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="Enum.h" />
+    <ClInclude Include="Functor.h" />
+    <ClInclude Include="Include.h" />
+    <ClInclude Include="Key.h" />
+    <ClInclude Include="KeyMgr.h" />
+    <ClInclude Include="Land.h" />
+    <ClInclude Include="MainGame.h" />
+    <ClInclude Include="Mines.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="Monster_Bat.h" />
+    <ClInclude Include="Monster_Boss.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="MyBmp.h" />
+    <ClInclude Include="MyButton.h" />
+    <ClInclude Include="MyEdit.h" />
+    <ClInclude Include="MyMenu.h" />
+    <ClInclude Include="Obj.h" />
+    <ClInclude Include="ObjCollision.h" />
+    <ClInclude Include="ObjMgr.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneMgr.h" />
+    <ClInclude Include="ScrollMgr.h" />
+    <ClInclude Include="Monster_Slime.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="ShopButton.h" />
+    <ClInclude Include="SoundMgr.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Stone.h" />
+    <ClInclude Include="Struct.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="TileMgr.h" />
+    <ClInclude Include="Tool.h" />
+    <ClInclude Include="Treasure.h" />
+    <ClInclude Include="TV.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="UIFactory.h" />
+    <ClInclude Include="UIMgr.h" />
+    <ClInclude Include="UI_BagItem.h" />
+    <ClInclude Include="UI_FarmTalk.h" />
+    <ClInclude Include="UI_GambleTalk.h" />
+    <ClInclude Include="UI_Gold.h" />
+    <ClInclude Include="UI_Hp.h" />
+    <ClInclude Include="UI_Icon.h" />
+    <ClInclude Include="UI_Imoji.h" />
+    <ClInclude Include="UI_Inven.h" />
+    <ClInclude Include="UI_Item.h" />
+    <ClInclude Include="UI_Shop.h" />
+    <ClInclude Include="UI_Talk.h" />
+    <ClInclude Include="UI_TalkNPC.h" />
+    <ClInclude Include="UI_WallTalk.h" />
+    <ClInclude Include="Wall.h" />
+    <ClInclude Include="Wood.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="API_STARDEW_VALLEY.cpp" />
+    <ClCompile Include="Arrow.cpp" />
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Birds.cpp" />
+    <ClCompile Include="BmpMgr.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Cat.cpp" />
+    <ClCompile Include="Cave.cpp" />
+    <ClCompile Include="Cave2.cpp" />
+    <ClCompile Include="Cave3.cpp" />
+    <ClCompile Include="CollisionMgr.cpp" />
+    <ClCompile Include="Crops.cpp" />
+    <ClCompile Include="Crop_Flower.cpp" />
+    <ClCompile Include="Crop_Pepper.cpp" />
+    <ClCompile Include="Ending.cpp" />
+    <ClCompile Include="Farm.cpp" />
+    <ClCompile Include="Gamble.cpp" />
+    <ClCompile Include="Grass.cpp" />
+    <ClCompile Include="HP.cpp" />
+    <ClCompile Include="Imoji.cpp" />
+    <ClCompile Include="Items.cpp" />
+    <ClCompile Include="ItemsMgr.cpp" />
+    <ClCompile Include="Key.cpp" />
+    <ClCompile Include="KeyMgr.cpp" />
+    <ClCompile Include="Land.cpp" />
+    <ClCompile Include="MainGame.cpp" />
+    <ClCompile Include="Mines.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="Monster_Bat.cpp" />
+    <ClCompile Include="Monster_Boss.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="MyBmp.cpp" />
+    <ClCompile Include="MyButton.cpp" />
+    <ClCompile Include="MyEdit.cpp" />
+    <ClCompile Include="MyMenu.cpp" />
+    <ClCompile Include="Obj.cpp" />
+    <ClCompile Include="ObjCollision.cpp" />
+    <ClCompile Include="ObjMgr.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneMgr.cpp" />
+    <ClCompile Include="ScrollMgr.cpp" />
+    <ClCompile Include="Monster_Slime.cpp" />
+    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="ShopButton.cpp" />
+    <ClCompile Include="SoundMgr.cpp" />
+    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Stone.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="TileMgr.cpp" />
+    <ClCompile Include="Tool.cpp" />
+    <ClCompile Include="Treasure.cpp" />
+    <ClCompile Include="TV.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="UIMgr.cpp" />
+    <ClCompile Include="UI_BagItem.cpp" />
+    <ClCompile Include="UI_FarmTalk.cpp" />
+    <ClCompile Include="UI_GambleTalk.cpp" />
+    <ClCompile Include="UI_Gold.cpp" />
+    <ClCompile Include="UI_Hp.cpp" />
+    <ClCompile Include="UI_Icon.cpp" />
+    <ClCompile Include="UI_Imoji.cpp" />
+    <ClCompile Include="UI_Inven.cpp" />
+    <ClCompile Include="UI_Item.cpp" />
+    <ClCompile Include="UI_Shop.cpp" />
+    <ClCompile Include="UI_Talk.cpp" />
+    <ClCompile Include="UI_TalkNPC.cpp" />
+    <ClCompile Include="UI_WallTalk.cpp" />
+    <ClCompile Include="Wall.cpp" />
+    <ClCompile Include="Wood.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="API_STARDEW_VALLEY.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="API_STARDEW_VALLEY.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fmodex.dll" />
+    <None Include="fmodexL.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="fmodex_vc.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
