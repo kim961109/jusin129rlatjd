@@ -43,5 +43,6 @@ protected:
 	FRAME		m_tFrame;
 
 	TCHAR*		m_pFrameKey;
+	int iTest;
 };
 
